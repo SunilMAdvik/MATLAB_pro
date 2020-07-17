@@ -1,0 +1,38 @@
+SECURED DATA TRANSMISSION USING WAVELET BASED 
+STEGANOGRAPHY AND CRYPTOGRAPHY BY USING
+ AES ALGORITHM
+ 
+
+
+In this paper, a method to combine
+steganography (Least Significant Method) and 
+cryptography (AES) is considered, so as to 
+provide a more secure way for data transmission
+ through any unsecured or public networks. 
+
+
+
+Steps- Encryption 
+
+1. Select Data to be Hided "Hide_Data"(16-bytes)
+
+
+2. Encrypt Plain_Text into Chiper_Text
+   using AES-128 bit Encryption
+
+
+3. Select Any image (Cover_Image) 
+    To hide the Chiper Text in Image 
+
+4. Hide The Data.
+
+
+
+
+
+Steps- Decryption
+
+1. Extract the Hided Data From Stego_Image
+
+2. Decrypt the Chiper_Text to Get Original Plain_Text
+   using AES-128 bit Decryption.
