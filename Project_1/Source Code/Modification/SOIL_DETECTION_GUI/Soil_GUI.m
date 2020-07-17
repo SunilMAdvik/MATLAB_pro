@@ -1,0 +1,53 @@
+warning off all;
+clc;
+clear all;
+close all;
+
+% Project Title: Plant Leaf Disease Detection & Classification
+
+
+FigWin = figure('Position',[80 80 650 500],'Name','SOIL_DETECTION',...
+                 'NumberTitle','off','Color',[ 0.82 0.81 0.77 ]);
+
+AxesHandle = axes('Position',[0.25 0.15 0.65 0.75], 'Box','on');
+
+imageLoad='INPUT_IMAGE';
+h=uicontrol(FigWin,'Style','pushbutton','Position',[40,460,90,40],...
+             'String','LOAD_IMAGE','Callback',['rgbimage=loadimage;' 'imagesc(rgbimage);'...
+             'title(imageLoad);' 'colormap(gray);']);
+
+Resize_image ='RESIZE_IMAGE';
+h=uicontrol(FigWin,'Style','pushbutton','Position',[40,410,90,40],...
+             'String','RE_SIZE','Callback',['RGBIMAGE=resizeimage(rgbimage);'... 
+             'subplot(AxesHandle);' 'imagesc(RGBIMAGE);'...
+             'title(Resize_image);' 'colormap(gray);']);
+         
+Median_Filter_image='MEDIAN_FILTER IMAGE';
+h=uicontrol(FigWin, 'Style','pushbutton','Position',[40,360,90,40],...
+                'String','MEDIAN_FILTER','Callback',['K=Meadian(RGBIMAGE);'...
+                'subplot(AxesHandle);' 'imagesc(K);'...
+                'title(Median_Filter_image);' 'colormap(gray);']);
+            
+            
+Contrast_image='CONTRAST ENANCED IMAGE';
+h=uicontrol(FigWin, 'Style','pushbutton','Position',[40,310,90,40],...
+                'String','CONTRAST','Callback',['[I rows columns]=Con_ADJ(K);'...
+                'subplot(AxesHandle);' 'imagesc(I);'...
+                'title(Contrast_image);' 'colormap(gray);']);
+         
+                              
+Feature_Extraction ='FEATURE EXTRACTION';
+h=uicontrol(FigWin, 'Style','pushbutton','Position',[40,260,90,40],...
+                'String','FEATURE EXTRACTION','Callback',['[Feature_Vector]= feature_extraction(I);']);
+
+Feature_Train='FEATURE_TRAIN';
+h=uicontrol(FigWin, 'Style','pushbutton','Position',[40,210,90,40],...
+                'String','FEATURE_TRAIN','Callback',['[Feature_train train_label Feature_test]=featinp(Feature_Vector);']);
+            
+CLASSIFY=' SOIL_TYPE_DETECTION';
+h=uicontrol(FigWin, 'Style','pushbutton','Position',[40,160,90,40],...
+                'String','CLASSIFY','Callback',['result = multisvm(Feature_train,train_label,Feature_test);']);                    
+
+h=uicontrol(FigWin, 'Style','pushbutton','Position',[40,110,90,40],...
+                'String','EXIT','Callback',['exit;']);
+%             
