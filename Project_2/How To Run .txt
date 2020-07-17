@@ -1,0 +1,28 @@
+ 
+BLIND DUAL WATERMARKING FOR COLOR IMAGES
+AUTHENTICATION AND COPYRIGHT PROTECTION
+
+ 
+
+In this technique a multi-bit watermark 
+is embedded into the low frequency sub-band
+of a cover image by using alpha blending technique. 
+
+
+
+Steps- 
+
+1. Run"main_Embed.m" code
+
+2. Select any image as cover image 
+
+
+3. Select Any image as watermarking image 
+
+4. watermark the image using DWT Method (1st level DWT)
+
+5. Use Secert Key at Receiver side ...
+
+6. Cheak For authentication of Secert Key At sender side.
+
+7. Plot The Graph of K vs PSNR and SSIM..
