@@ -1,0 +1,62 @@
+TRAFFIC SIGN RECOGNITION USING 
+CONVOLUTIONAL NEURAL NEYWORKS
+ 
+
+
+The Traffic Sign Recognition project is
+to build a Deep Neural Network (DNN) 
+which is used to classify traffic signs. 
+
+16 -different Classes of Traffic Signs used
+CNN- classifier is used. 
+
+1.  'No entry'
+2.  'Turn left ahead'
+3.  'Level crossing with barrier ahead'
+4.  '40'
+5.  '60'
+6.  'No left turn'
+7.  'No U-turn'
+8.  'Horn prohibited'
+9.  'No right turn'
+10. 'No straight ahead'
+11. '30'
+12. 'STOP'
+13. 'vehicles prohibited'
+14. 'turn right ahead'
+15. 'U_turn'
+16. 'Bicycles Only'
+
+
+
+Layer Defnations
+
+10x1 Layer array with layers:
+1   ''   Image Input             
+2   ''   Convolution             
+3   ''   ReLU                       
+4   ''   Max Pooling             
+5   ''   Convolution             
+6   ''   ReLU                        
+7   ''   Max Pooling             
+8   ''   Fully Connected       
+9   ''   Softmax                     
+10   ''   Classification Output   
+
+
+Train Neaural Network..
+
+
+Testing..
+
+1. Test network with new image
+2. Select any Image From Test Dataset(16-Types).
+3. Classify and  Display Results..
+
+Its take some time to Train System..
+
+once it Trained Completely ..
+New Diagloue box will open..
+
+Select New Image for Testing 
+Classifiy the New image and get Classified Output.
