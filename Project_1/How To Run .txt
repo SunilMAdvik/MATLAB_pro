@@ -1,0 +1,45 @@
+
+
+PERFORMANCE OF SVM CLASSIFIER BASED 
+SOIL CLASSIFICATION
+ 
+
+
+Classification of soil is the dissolution to soil sets to
+particular group having a like characteristics and similar
+manners.
+
+7 -different types of soil used
+svm- classifier is used. 
+
+1.  Clay
+2.  Clayey Peat
+3.  clayey sand 
+4.  Humus clay
+5.  Peat 
+6.  sandy clay 
+7.  Silty Sand
+
+
+
+Training...
+
+1.Run "Train_system.m" progm..
+2.Automatically "Train_data.mat" Created.
+
+
+Testing..
+
+1. Run "SOIL.m" program..
+2. Select any Image From Test Dataset(7-Types).
+3. Feature Extraction 
+4. Classify with SVM And Display Results..
+
+
+Modification.
+
+Matlab-GUI is implemented for same algorthim .
+
+
+
+Select any other images
