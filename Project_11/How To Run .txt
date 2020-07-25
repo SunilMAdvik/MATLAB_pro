@@ -1,0 +1,32 @@
+
+
+Improved license plate localisation algorithm
+based on morphological operations
+
+Automatic license plate recognition (ALPR) systems have become 
+an important tool to track stolen cars, accesscontrol, and monitor traffic.
+
+The present algorithm is able to accurately detect and 
+differentiate license plates in complex images. This method was
+ first tested through MATLAB with an on-line public database of
+Greek number plates and was 100% accurate in all clear images, 
+and achieved 98.45% accuracy when using the entire
+database which included complex backgrounds and
+ license plates obscured by shadow and dirt.
+
+Steps 
+
+1. Run " Localization-maaain.m"code 
+
+   we implented the localization of license plate algorithm on
+   color, gray , difficlut  background also
+   
+  license plate can be detected and localized 
+  using bounding box using morphological operations
+  
+2. Run" Recogniation- Main.m"
+   
+license plate can be detected and localized
+ using bounding box using morphological operations
+
+then Alpha- Numeric letters are recognised
