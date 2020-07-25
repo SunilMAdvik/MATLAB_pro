@@ -1,0 +1,2 @@
+we used MORPHOLOGICAL OPERATION as 
+proposed technique for extarcting the characters

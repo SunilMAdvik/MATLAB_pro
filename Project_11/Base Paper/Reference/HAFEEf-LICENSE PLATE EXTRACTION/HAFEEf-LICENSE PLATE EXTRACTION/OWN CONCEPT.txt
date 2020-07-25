@@ -1,0 +1,15 @@
+license plate recognition and text extraction
+
+we can give running video of car as input or
+we can take a snap from running video..
+
+if we give video as input, video needs to convert
+into frames...we need to select a frame..
+
+It will be severely affected by blur..
+we are further adding the blur and noise in order
+to increase the complexity of our work..
+eventhough it gets affected by  blur ,
+we are sucessfully detecting the license plate area
+and extracting the characters of the license plate.
+
