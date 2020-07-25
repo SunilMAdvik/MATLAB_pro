@@ -1,0 +1,5 @@
+we used MORPHOLOGICAL OPERATION as 
+proposed technique for extarcting the characters.
+
+For deblurring and denoising, we use 
+deconvolution using wiener filter.. 
